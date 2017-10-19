@@ -1,0 +1,6 @@
+.reviews-settings-wrapper .tabs-content > div {
+  display: black;
+}
+.reviews-settings-wrapper .tabs-content > div.hidden {
+  display: none;
+}

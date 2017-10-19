@@ -1,0 +1,10 @@
+.reviews-settings-wrapper {
+  .tabs-content {
+    > div {
+      display:black;
+      &.hidden {
+        display:none;
+      }
+    }
+  }
+}

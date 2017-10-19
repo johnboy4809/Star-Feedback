@@ -1,0 +1,206 @@
+#starRating {
+  z-index: 1000;
+  padding: 16px;
+  border-radius: 3px;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+}
+#starRating .starWrap {
+  text-align: center;
+}
+#starRating .starWrap span {
+  font-weight: 400;
+  margin-right: 15px;
+  font-size: 1.75em;
+  vertical-align: middle;
+}
+#starRating .starWrap .fa-star {
+  margin-right: 5px;
+  font-size: 1em;
+  vertical-align: middle;
+}
+#starRating p {
+  text-align: right;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 0.70em;
+}
+#starRating a {
+  text-decoration: underline;
+  font-size: 0.85em;
+}
+
+.stars > input {
+  display: none;
+}
+
+.stars > label {
+  float: right;
+  min-width: 60px;
+  min-height: 30px;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.stars > label:before {
+  margin: 5px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f006" !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  font-size: 45px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.stars > input:checked ~ label:before,
+.stars:not(:checked) > label:hover::before,
+.stars:not(:checked) > label:hover ~ label:before {
+  content: "\f005" !important;
+}
+
+.reviewWrap {
+  margin-top: 12%;
+}
+
+.rating {
+  text-align: center;
+  border: none;
+}
+.rating h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.rating .stars {
+  display: inline-block;
+}
+
+.owl-theme {
+  position: relative;
+}
+.owl-theme .owl-stage {
+  text-align: center;
+}
+.owl-theme .owl-next, .owl-theme .owl-prev {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-theme .owl-prev {
+  left: 0;
+}
+.owl-theme .owl-prev:before {
+  content: "\f053";
+}
+.owl-theme .owl-next {
+  right: 0;
+}
+.owl-theme .owl-next:before {
+  content: "\f054";
+}
+.owl-theme .owl-dots {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+
+.lastSlide {
+  background: white;
+  width: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: auto;
+  max-width: 510px;
+  width: 100%;
+}
+.lastSlide input, .lastSlide textarea {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.lastSlide input:first-of-type, .lastSlide textarea:first-of-type {
+  margin-top: 20px;
+}
+.lastSlide input:not(.submit), .lastSlide textarea {
+  background: white !important;
+}
+.lastSlide textarea {
+  height: 163px;
+}
+.lastSlide .submit {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  width: auto;
+  border-radius: 5px;
+}
+
+.reviewGuideWrap {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+}
+.reviewGuideWrap .reviewGuide {
+  text-align: center;
+}
+.reviewGuideWrap .reviewGuide span:first-of-type {
+  margin-right: 20px;
+}
+.reviewGuideWrap .reviewGuide span:first-of-type::before {
+  content: "\f005";
+  font-family: FontAwesome;
+}
+.reviewGuideWrap .reviewGuide span:before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+
+#main {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-content {
+  margin-top: 50px;
+}
+.entry-content:last-of-type {
+  margin-bottom: 50px;
+}
+.entry-content aside {
+  padding: 10px;
+}
+.entry-content aside h4 {
+  font-size: 22px;
+}
+.entry-content aside h4 small {
+  padding-top: 5px;
+}
+.entry-content aside h5 {
+  padding: 0px;
+}
+.entry-content aside i {
+  font-size: 30px;
+  padding: 10px 0px;
+}
+.entry-content .review p {
+  position: relative;
+}
